@@ -115,7 +115,7 @@ const UserInfo = () => {
       </div>
 
       <div className={styles.container}>
-        <h3 className={styles._info_first}>Clicks</h3>
+        <h3 className={styles.container_info_first}>Clicks</h3>
         {error ? (
           <div className={styles.loading}>{error}</div>
         ) : !loading && dataClicks.dataArray[0] ? (
@@ -123,7 +123,7 @@ const UserInfo = () => {
         ) : (
           <div className={styles.loading}>Loading...</div>
         )}
-        <h3 className={styles._info_second}>Views</h3>
+        <h3 className={styles.container_info_second}>Views</h3>
         {error ? (
           <div className={styles.loading}>{error}</div>
         ) : !loading && dataViews.dataArray[0] ? (

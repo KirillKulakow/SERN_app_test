@@ -84,7 +84,7 @@ const TableStats = () => {
             <td>{el.first_name}</td>
             <td>{el.last_name}</td>
             <td>{el.email}</td>
-            <td>{el.gender.toLowwerCase()}</td>
+            <td>{el.gender}</td>
             <td>{el.ip_address}</td>
             <td>{el.clicks}</td>
             <td>{el.page_views}</td>

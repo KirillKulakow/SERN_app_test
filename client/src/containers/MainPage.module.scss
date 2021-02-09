@@ -1,0 +1,279 @@
+.nav{
+    margin: 24px 0 48px 0
+}
+
+.background-top{
+    background-image: url('../assets/MainNavSvg.svg');
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1440px;
+    height: 655px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    z-index: -5;
+}
+.background-bottom{
+    background-image: url('../assets/FooterNavSvg.svg');
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1440px;
+    height: 183px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    z-index: -5;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        margin: 0 10px auto
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 400;
+        color: #fff;
+        margin: 0;
+    }
+}
+
+.main-container{
+    max-width: 1180px;
+    margin: 0 auto 165px auto;
+    @media screen and (max-width: 1200px) {
+        margin: 0 10px 165px
+    }
+}
+.section-brainstorming{
+    margin-bottom: 285px;
+    position: relative;
+    h1{
+        font-size: 50px;
+        letter-spacing: -1px;
+        color: #fff;
+        margin: 0;
+        line-height: 59px;
+        font-weight: 300;
+        width: 55%;
+        @media screen and (max-width: 760px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 32px;
+        }
+    }
+    p{
+        width: 50%;
+        color: #fff;
+        font-size: 20px;
+        margin: 24px 0 50px;
+        line-height: 28px;
+        @media screen and (max-width: 760px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 14px;
+        }
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #3A80BA;
+        margin: 9px 0;
+        padding: 18px 32px;
+        font-size: 16px;
+        font-family: 'Montserrat';
+    }
+}
+
+.link_router{
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #3A80BA;
+    margin: 9px 0;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    @media screen and (max-width: 760px) {
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.section-info-projects {
+    h3{
+        font-size: 32px;
+        text-align: center;
+        font-weight: 400;
+        margin: 0 0 24px 0;
+    }
+    p{
+        width: 65%;
+        text-align: center;
+        margin: 0 auto 40px;
+        line-height: 28px;
+        font-size: 20px;
+    }
+    ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 16px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        @media screen and (max-width: 660px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 16px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 323px;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+            border-radius: 32px;
+            background-color: #fff;
+            h4{
+                margin: 0 0 16px 10px;
+                font-size: 24px;
+            }
+            p{
+                margin: 0 auto;
+                width: 80%;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+.footer{
+    position: relative;
+    &_form{
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        .form_input{
+            font-family: 'Montserrat';
+            padding: 22px 20px;
+            width: 540px;
+            position: relative;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            background-color: #fff;
+            @media screen and (max-width: 660px) {
+                width: 320px;
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+            }
+            @media screen and (max-width: 380px) {
+                width: 250px;
+                font-size: 12px;
+            }
+        }
+        .form_button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 3px;
+            border: none;
+            border-radius: 10px;
+            background-color: #3A80BA;
+            padding: 20px 51px;
+            font-size: 15px;
+            font-family: 'Montserrat';
+            color: #fff;
+            @media screen and (max-width: 380px) {
+                padding: 20px 25px;
+            }
+        }
+    }
+    .bottom_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 75px 0 30px;
+        margin: 0 auto;
+        max-width: 1180px;
+        @media screen and (max-width: 1200px) {
+            margin: 0 10px
+        }
+        @media screen and (max-width: 460px) {
+            flex-direction: column;
+        }
+        &_logo{
+            font-size: 32px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0;
+            @media screen and (max-width: 660px) {
+                font-size: 26px;
+            }
+        }
+        &_rights{
+            margin: 0;
+            font-size: 16px;
+            color: #fff;
+            @media screen and (max-width: 660px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.background_icon{
+    display: block;
+    position: relative;
+    width: 106px;
+    height: 96px;
+    margin: 0 auto 40px;
+    background-image: url('../assets/BGIconSvg.svg');
+}
+
+.icon_list{
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 43%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+}
+.art{
+    background-image: url('../assets/ArtDesignSvg.svg');
+}
+.secure{
+    background-image: url('../assets/SecureSvg.svg');
+}
+.device{
+    background-image: url('../assets/DeviceLogoSvg.svg');
+}
+
+.img-phone{
+    position: absolute;
+    top: -49px;
+    right: 55px;
+    width: 365px;
+    height: auto;
+    @media screen and (max-width: 760px) {
+        display: none;
+    }
+    @media screen and (max-width: 930px) {
+        right: 10px;
+    }
+}

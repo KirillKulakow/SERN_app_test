@@ -1,0 +1,20 @@
+.container{
+    margin: 16px auto;
+    max-width: 1180px;
+    @media screen and (max-width: 1200px) {
+        margin: 0 10px
+    }
+}
+.link{
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 16px;
+    font-weight: 400;
+}
+.active{
+    color: #3A80BA;
+}
+.delimiter{
+    color: #CCCCCC;
+    padding: 0 5px;
+}
